@@ -51,7 +51,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 5vh;
+  margin-top: 8.7vh;
   background-color: var(--second);
   border-radius: 0.8rem;
   position: relative;
@@ -78,10 +78,11 @@ th {
 }
 table {
   margin: 1rem 1rem 1.3rem;
+  width: 90%;
 }
 table td {
   padding-top: 0.5rem;
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   color: var(--first);
   letter-spacing: 1px;
 }
