@@ -6,11 +6,10 @@
   --second: white;
   --third: hsl(185, 75%, 39%);
   --forth: hsl(147, 87%, 85%);
-}
-html {
-  font: normal 18px 'Kumbh Sans', sans-serif;
+  --fifth: hsl(0, 0%, 59%);
 }
 body {
+  font: normal 18px 'Kumbh Sans', sans-serif;
   background-color: var(--third);
   text-align: center;
 }
@@ -18,18 +17,17 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
 }
 img#top {
   position: fixed;
-  top: -73%;
+  top: -68%;
   left: -15%;
   z-index: -1;
 }
 img#bot {
   position: fixed;
-  bottom: -78%;
-  right: -15%;
+  bottom: -84%;
+  right: -13%;
   z-index: -1;
 }
 section img:first-child {
@@ -38,7 +36,7 @@ section img:first-child {
 section img#card {
   width: 30%;
   margin: 0 auto 1rem;
-  border: 5px solid var(--second);
+  border: 0.3rem solid var(--second);
   border-radius: 50%;
   position: absolute;
   left: 35%;
@@ -47,14 +45,15 @@ section img#card {
   background-color: var(--second);
 }
 section {
+  margin: 11.5rem 0 8rem;
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 8.7vh;
   background-color: var(--second);
   border-radius: 0.8rem;
   position: relative;
+  box-shadow: 0px 0px 25px 2px var(--first);
 }
 h1 {
   margin-top: 4.5rem;
@@ -64,23 +63,25 @@ h1 span {
   color: var(--first);
   font-weight: normal;
 }
-h2 {
+main p {
   font-size: 0.8rem;
   color: var(--first);
-  margin: 0.6rem 0 1rem;
+  margin: 0.6rem 0 0rem;
+  border-bottom: 0.2px solid #dadada;
+  padding-bottom: 1.5rem;
 }
-hr {
-  width: 100%;
-  border-top: 1px solid var(--second);
-}
-th {
-  font-weight: bold;
-}
+
 table {
-  margin: 1rem 1rem 1.3rem;
+  margin: 1.5rem 1rem 1.3rem;
   width: 90%;
 }
-table td {
+tr > * {
+  width: calc(100% / 3);
+}
+td {
+  font-weight: bold;
+}
+table th {
   padding-top: 0.5rem;
   font-size: 0.55rem;
   color: var(--first);
