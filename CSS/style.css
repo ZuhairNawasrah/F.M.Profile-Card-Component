@@ -35,14 +35,11 @@ section img:first-child {
 }
 section img#card {
   width: 30%;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   border: 0.3rem solid var(--second);
   border-radius: 50%;
-  position: absolute;
-  left: 35%;
-  top: 5rem;
-  /* IDK why, but there is a little bit green color between border and picture */
-  background-color: var(--second);
+  position: relative;
+  bottom: 3rem;
 }
 section {
   margin: 11.5rem 0 8rem;
@@ -52,11 +49,10 @@ section {
   justify-content: space-between;
   background-color: var(--second);
   border-radius: 0.8rem;
-  position: relative;
-  box-shadow: 0px 0px 25px 2px var(--first);
+  box-shadow: 0px 0px 25px 2px #018892;
 }
 h1 {
-  margin-top: 4.5rem;
+  margin-top: -1.3rem;
   font-weight: bold;
 }
 h1 span {
